@@ -1,0 +1,18 @@
+the goals overall structure and approach of this sixth edition of concepts of programming languages remain the same as those of the five earlier editions
+*
+the principal goal is to provide the reader with the tools necessary for the critical evaluation of existing and future programming languages
+*
+an additional goal is to prepare the reader for the study of compiler design
+*
+there were several sources of our motivations for the changes in the sixth edition
+*
+first to maintain the currency of the material much of the discussion of older programming languages has been removed
+*
+in its place is material on newer languages
+*
+especially interesting historical information on older programming languages has been retained but placed in historical side boxes
+*
+second the material has been updated to reflect the fact that most students now come to this course with a basic understanding of object oriented programming
+*
+we shortened the discussion of basics and expanded the discussion of advanced topics
+*

@@ -1,0 +1,52 @@
+light 6 6 -2 1 1 1
+ambient .3 .0 .1
+diffuse .1 .3 .5
+specular 1 1 1
+specularExponent 50
+background 1 1 1
+
+!push translate 2 .38 .2 rotate 30 0 1 0 scale .8 .8 .8 teapot pop
+!push scale 1 1 1 buckyball pop
+!push cube pop
+
+def jackPart { 
+push scale .2 .2 1 sphere pop
+push translate 0 0 1.2 scale .2 .2 .2 sphere pop
+push translate 0 0 -1.2 scale .2 .2 .2 sphere pop
+}
+
+def jack { push use jackPart
+rotate 90 0 1 0 use jackPart
+rotate 90 1 0 0 use jackPart pop
+}
+
+def wall { push translate 1 .01 1 scale 1 .02 1 cube pop }
+def leg { push translate 0 .13 0 scale .01 .13 .01 cube pop }
+
+def chair {
+push translate .0097 .41 -.065 scale .08 .07 .001 cube pop
+push
+translate -.073 .25 -.073 use leg
+translate .15 0 0 use leg pop
+push translate 0 .25 0 scale .09 .01 .09 cube pop
+push
+translate .08 0 .08 use leg 
+translate 0 0 -.15 use leg 
+translate -.15 0 .15 use leg 
+translate 0 0 -.15 use leg pop
+
+
+}
+
+!push translate .4 0 .6 rotate 45 0 0 1 scale .08 .08 .08 use jack pop
+!diffuse .3 .3 .1
+!push translate .6 0 .4 use chair pop
+
+!diffuse 0 .4 .3
+!push translate 0 -.1 0 use wall pop
+!push translate 0 -.1 0 rotate 90 0 0 2 use wall pop
+!push translate 0 -.1 0 rotate -90 1 0 0 use wall pop
+
+diffuse .5 .6 .838823443
+ambient .2321232 .3212576 .764212
+push scale 1 1 1 glass pop
